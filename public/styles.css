@@ -1,0 +1,302 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.pay-type {
+    background-color: ghostwhite;
+    margin: -.35em -1.2em;
+    padding: .5em 1.2em;
+    margin-bottom: 2em;
+}
+
+.pay-details {
+    padding: .3em 0;
+}
+
+.input-group {
+    color: #333;
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 20px 10px;
+    width: 200px;
+}
+
+.form-alert {
+    display: flex;
+    justify-content: space-between;
+    text-shadow: rgb(141, 34, 15);
+    font-weight: 600;
+    color: tomato;
+}
+
+.btn-div {
+    text-align: center;
+}
+
+.col-25 {
+    flex: 25%;
+}
+
+.col-50 {
+    flex: 50%;
+}
+
+.col-75 {
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 13px;
+    height: 33px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.errorLabel {
+    color: #cc0033 !important;
+}
+
+.error {
+    border: 1px solid #cc0033 !important;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: #0d2cb4;
+    color: white;
+    padding: 12px;
+    margin: 10px 5px;
+    border: none;
+    width: 30%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #0526b9b9;
+}
+
+a {
+    color: #2196F3;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+@media (max-width: 610px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}
+
+
+/*Card tile*/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.card-bounding {
+    width: 100%;
+    max-width: 350px;
+    height: 40%;
+    margin: 10px auto 10px auto;
+    position: relative;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    padding: 6px;
+    border: 1px solid #3e73ea;
+    border-radius: 6px;
+    font-family: roboto;
+    background: #fff;
+}
+
+.card-bounding aside {
+    font-size: 14px;
+    padding-bottom: 8px
+}
+
+.card-container {
+    width: 100%;
+    height: 30%;
+    padding-left: 40px;
+    padding-right: 20px;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 0 auto 10px;
+}
+
+.card-container input {
+    width: 100%;
+    letter-spacing: 0.1px;
+    font-size: 30px;
+    padding: 5px 5px 5px 10px;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.card-type {
+    width: 100%;
+    /* background: white; */
+    background-position: 0 -291px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+
+.card-type.mastercard {
+    background-position: 0 0
+}
+
+.card-type.visa {
+    background-position: 0 -115px
+}
+
+.card-type.amex {
+    background-position: 0 -57px
+}
+
+.card-type.discover {
+    background-position: 0 -174px
+}
+
+.card-valid {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    line-height: 60px;
+    font-size: 40px;
+    font-family: icons;
+    color: #ccc
+}
+
+.card-valid.active {
+    color: #42ca7c
+}
+
+.card-details {
+    width: 100%;
+    height: 30%;
+    text-align: left;
+    margin-bottom: 30px;
+    transition: 300ms ease;
+}
+
+.card-details input {
+    font-size: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card-details input.error {
+    border: 1px solid #c2313c;
+    box-shadow: 0 4px 8px 0 rgba(238, 76, 87, .3);
+    outline: none
+}
+
+.card-details .expiration {
+    width: 50%;
+    float: left;
+    padding-right: 5%
+}
+
+.card-details .cvv {
+    width: 45%;
+    float: left
+}
+
+
+/*alongside*/
+
+.card-visa {
+    background-image: url("./images/visa.gif");
+    background: cover;
+}
+
+.card-master {
+    background-image: url("./images/master.gif");
+    background: cover;
+}
+
+.card-amex {
+    background-image: url("./images/amex.gif");
+    background: cover;
+}
+
+.card-discover {
+    background-image: url("./images/discover.gif");
+    background: cover;
+}
+
+.card {
+    background-size: 85%;
+    width: 5rem;
+    height: 2.1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
